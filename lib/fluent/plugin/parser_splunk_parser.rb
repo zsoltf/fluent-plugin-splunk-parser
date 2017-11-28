@@ -18,7 +18,7 @@ require "fluent/plugin/parser"
 module Fluent::Plugin
   class SplunkParser < Parser
     # Register this parser as "splunk"
-    Fluent::Plugin.register_parser("splunk", self)
+    Fluent::Plugin.register_parser("splunk_parser", self)
 
     config_param :delimiter, :string, default: "|"   # delimiter is configurable with " " as default
     config_param :time_format, :string, default: nil # time_format is configurable

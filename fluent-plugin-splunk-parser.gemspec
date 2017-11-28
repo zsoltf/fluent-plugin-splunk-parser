@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Fluentd Splunk Parser plugin}
   spec.description   = %q{Fluentd plugin that parsers splunk formatted logs}
   spec.homepage      = "https://github.com/zsoltf/fluent-plugin-splunk-parser"
-  spec.license       = "BSD-2"
+  spec.license       = "BSD-2-Clause"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|
     f.match(%r{^(test|spec|features)/})
